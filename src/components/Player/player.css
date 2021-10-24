@@ -1,0 +1,113 @@
+.player {
+  min-height: 10vh;
+  background-color: #ddd;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button-group {
+  padding: 25px;
+}
+.player-button {
+  width: 3rem;
+  height: 3rem;
+  margin: 5px;
+}
+
+.player .play-button:active {
+  background-color: rgb(0, 221, 0);
+}
+
+.play-button::before {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-left: 1rem solid black;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+}
+
+.stop-button::before {
+  width: 1rem;
+  height: 1rem;
+  display: inline-block;
+  content: "";
+  background-color: black;
+}
+
+.fast-forward-button::before {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-left: 1rem solid black;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+}
+
+.fast-forward-button::after {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-left: 1rem solid black;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+}
+
+.rewind-button::before {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-right: 1rem solid black;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+}
+
+.rewind-button::after {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-right: 1rem solid black;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+}
+
+.track-forward-button::before {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-left: 1rem solid black;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+}
+
+.track-forward-button::after {
+  width: .2rem;
+  height: 1rem;
+  content: "";
+  display: inline-block;
+  background-color: black;
+}
+
+.track-back-button::after {
+  width: 0;
+  height: 0;
+  content: "";
+  display: inline-block;
+  border-right: 1rem solid black;
+  border-top: .5rem solid transparent;
+  border-bottom: .5rem solid transparent;
+}
+
+.track-back-button::before {
+  width: .2rem;
+  height: 1rem;
+  content: "";
+  display: inline-block;
+  background-color: black;
+}
